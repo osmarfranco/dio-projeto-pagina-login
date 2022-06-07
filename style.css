@@ -2,22 +2,206 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  font-family: var(--default-font);
 }
 
 :root {
   font-size: 62,5%;
-  --bg-color: #16171d;
-  --bg-color-2: #17171d;
-  --text-color: #cdccd0;
-  --text-color-2: #cac7d1;
-  --box-color: #3f3f48;
-  --box-color-2: #68686d;
-  --action-color: #fcebfd;
-  --action-color-2: #f3b1fd;
+  --bg-color: #202225;
+  --text-color: white;
+  --box-color: #292b2f;
+  --box-color-2: #2f3136;;
+  --action-color: #a69bfc;
+  --action-color-2: #847aca;
   --default-font: 'Roboto', sans-serif;
   --logo-font: 'Comfortaa', cursive;
 }
 
 body {
   background-color: var(--bg-color);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.phones {
+  display: flex;
+  width: 25rem;
+  height: 40rem;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 22rem;
+  height: 28rem;
+  margin-bottom: 1rem;
+  border: .1rem solid var(--box-color-2);
+  background-color: var(--box-color);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.logo p {
+  align-self: center;
+  margin-right: .5rem;
+  color: var(--text-color);
+  font-family: var(--logo-font);
+  font-size: 3rem;
+}
+
+.logo img {
+  align-self: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  width: 75%;
+}
+
+.login input {
+  padding: .6rem;
+  margin-bottom: .5rem;
+  border-radius: .5rem;
+  font-size: 1rem;
+}
+
+.login button {
+  padding: .6rem;
+  margin-top: .5rem;
+  border-radius: 2rem;
+  border-style: none;
+  background-color: var(--action-color);
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: large;
+  transition: background 200ms;
+  cursor: pointer;
+}
+
+.login button:hover {
+  background-color: var(--action-color-2);
+}
+
+
+.separator {
+  text-align: center;
+  margin: 1rem;
+  color: var(--text-color);
+}
+
+.login-button {
+  display: flex;
+  justify-content: space-evenly;
+  margin-inline: auto;
+  margin-bottom: .8rem;
+  width: 15rem;
+  padding: .4rem;
+  border-style: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.login-button img {
+  width: 2rem;
+}
+
+.login-button p {
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+}
+
+.google {
+  background-color: white;
+}
+
+.facebook {
+  background-color: #3B5998;
+  color: white;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  width: 22rem;
+  padding: 1.5rem 1rem;
+  border: .1rem solid var(--box-color-2);
+  background-color: var(--box-color);
+  color: var(--text-color);
+}
+
+.sign-up a {
+  color: var(--action-color);
+}
+
+.get-app {
+  display: flex;
+  flex-direction: column;
+  width: 22rem;
+}
+
+.get-app p {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  color: var(--text-color);
+}
+
+.get-buttons {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.get-buttons img {
+  width: 9rem;
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+footer p {
+  color: var(--text-color);
+  font-size: small;
+}
+
+footer a {
+  color: var(--action-color);
+}
+
+@media (max-width: 800px) {
+  .phones {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .login, .sign-up, .get-app {
+    width: 100%;
+  }
+
+  .phones {
+    display: none;
+  }
 }
