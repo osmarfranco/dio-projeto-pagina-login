@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62,5%;
+  --bg-color: #16171d;
+  --bg-color-2: #17171d;
+  --text-color: #cdccd0;
+  --text-color-2: #cac7d1;
+  --box-color: #3f3f48;
+  --box-color-2: #68686d;
+  --action-color: #fcebfd;
+  --action-color-2: #f3b1fd;
+  --default-font: 'Roboto', sans-serif;
+  --logo-font: 'Comfortaa', cursive;
+}
+
+body {
+  background-color: var(--bg-color);
+}
